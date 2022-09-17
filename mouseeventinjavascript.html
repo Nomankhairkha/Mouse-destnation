@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event </title>
+    <style>
+        div{
+            
+            border-radius: 50%;
+            width: 400px;
+           height: 400px;
+            background-color: aqua;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            
+            
+           
+        }
+        
+        body{
+            background-color: rgb(109, 175, 175);
+        }
+
+        h1 {
+       padding-top: 4em;
+          }
+         
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(216, 5, 5);
+        }
+    </style>
+</head>
+<body>
+    <h1> Roll your Mouse over the Boxes </h1>
+    <div> </div>
+
+    <script>
+        
+
+       var heading = document.querySelector('h1');
+       var box = document.querySelector('div');
+
+       box.addEventListener('mouseover',function(){
+        heading.innerHTML = "The mouse is over the box";
+       });
+
+        box.addEventListener('mouseout', function(){
+            heading.innerHTML = "The Mouse Has Left The Box";
+        }); 
+
+
+
+    
+    </script>
+    
+</body>
+</html>
